@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GEONEON</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <audio id="menuMusic" src="assets/menu-music.mp3" loop preload="auto"></audio>
+    <audio id="levelMusic0" src="assets/level1.mp3" loop preload="auto"></audio>
+    <audio id="levelMusic1" src="assets/level2.mp3" loop preload="auto"></audio>
+    <audio id="levelMusic2" src="assets/level3.mp3" loop preload="auto"></audio>
+    <audio id="levelMusic3" src="assets/boss-music.mp3" loop preload="auto"></audio>
+
+    <div id="menu">
+        <h1 style="letter-spacing: 4px; margin-bottom: 20px;">GEONEON</h1>
+        <button class="level-btn" onclick="startGame(0)">EZ AS PIE <span class="best-score" id="best-0">Best: 0%</span></button>
+        <button class="level-btn" onclick="startGame(1)">EAT THE PIE <span class="best-score" id="best-1">Best: 0%</span></button>
+        <button class="level-btn" onclick="startGame(2)">STEREO NEON <span class="best-score" id="best-2">Best: 0%</span></button>
+        <button class="gauntlet-btn" onclick="startGame(3)">THE GAUNTLET <span class="best-score" id="best-3">Best: 0%</span></button>
+    </div>
+
+    <div id="progressText">0%</div>
+    <div id="progressBar"><div id="pFill"></div></div>
+    <canvas id="gameCanvas"></canvas>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>

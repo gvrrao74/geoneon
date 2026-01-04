@@ -1,0 +1,27 @@
+ body { margin: 0; background: #050505; color: #00ffcc; font-family: 'Segoe UI', sans-serif; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; }
+        canvas { display: block; background: #080808; border: 2px solid #333; cursor: pointer; }
+        #menu { position: absolute; text-align: center; background: rgba(0,0,0,0.95); padding: 30px; border: 2px solid #00ffcc; box-shadow: 0 0 30px rgba(0,255,204,0.3); z-index: 10; width: 340px; border-radius: 10px; }
+        .level-btn { background: transparent; border: 2px solid #00ffcc; color: #00ffcc; padding: 12px; margin: 10px 0; cursor: pointer; font-size: 16px; width: 100%; transition: 0.2s; font-weight: bold; border-radius: 5px; }
+        .level-btn:hover { background: #00ffcc; color: #000; }
+        .gauntlet-btn { 
+            background: transparent; 
+            border: 2px solid #ff0000; 
+            color: #ff0000; 
+            padding: 12px; 
+            margin: 10px 0; 
+            cursor: pointer; 
+            font-size: 16px; 
+            width: 100%; 
+            transition: 0.2s; 
+            font-weight: bold; 
+            border-radius: 5px; 
+        }
+        .gauntlet-btn:hover { 
+            background: #ff0000; /* FIXED: Red hover background */
+            border-color: #ff0000;
+            color: #000000;      /* White text on red for readability */
+        }
+        .best-score { display: block; font-size: 12px; font-weight: normal; color: #00aaaa; margin-top: 4px; }
+        #progressBar { width: 800px; height: 8px; background: #222; margin-bottom: 5px; border-radius: 4px; display: none; overflow: hidden; border: 1px solid #444; }
+        #pFill { width: 0%; height: 100%; background: #00ffcc; }
+        #progressText { color: #00ffcc; margin-bottom: 10px; font-size: 16px; display: none; font-weight: bold; }
